@@ -1,9 +1,8 @@
-import React from 'react';
-import { Header } from './components/Header';
-import { Projects } from './components/Projects';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
-import { Menu } from './components/Menu';
+import { Header } from './components/Header'
+import { Projects } from './components/Projects'
+import { Skills } from './components/Skills'
+import { Contact } from './components/Contact'
+import { Menu } from './components/Menu'
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <Skills />
       <Contact />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
