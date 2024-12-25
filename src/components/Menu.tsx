@@ -4,7 +4,12 @@ import { Menu as MenuIcon, X } from 'lucide-react'
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const links = ['Link 1', 'Link 2', 'Link 3', 'Link 4']
+  const links = [
+    { name: 'study-desk', url: '/study-desk' }
+    // 'Link 2',
+    // 'Link 3',
+    // 'Link 4'
+  ]
 
   return (
     <div className="fixed top-0 left-0 z-50 md:p-8 p-4">
@@ -17,7 +22,7 @@ export const Menu = () => {
       </button>
 
       <div
-        className={`absolute top-full left-0 mt-2 bg-black border border-white/20 rounded-lg shadow-xl min-w-48 py-2 transition-all duration-200 ease-out origin-top-left ${
+        className={`absolute top-full left-10 mt-2 bg-black border border-white/20 rounded-lg shadow-xl min-w-48 py-2 transition-all duration-200 ease-out origin-top-left ${
           isOpen
             ? 'opacity-100 scale-100'
             : 'opacity-0 scale-95 pointer-events-none'
@@ -26,13 +31,13 @@ export const Menu = () => {
         <nav>
           <ul>
             {links.map((link) => (
-              <li key={link}>
+              <li key={link.url}>
                 <a
-                  href="#"
+                  href={link.url}
                   className="block px-4 py-2 hover:bg-white/10 transition-colors text-lg"
                   onClick={() => setIsOpen(false)}
                 >
-                  {link}
+                  {link.name}
                 </a>
               </li>
             ))}
