@@ -1,0 +1,10 @@
+.radial-glow {
+    /* top: 100px; */
+    /* left: 25%; */
+    width: 100vmax;
+    height: 50vmax;
+    background: radial-gradient(closest-side, #ff6651, transparent);
+    opacity: .25;
+    pointer-events: none;
+    position: absolute;
+}

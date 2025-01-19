@@ -1,7 +1,8 @@
-import React from 'react'
+import './Header.css'
 
 export const Header = () => (
   <header className="h-[50vh] flex items-center justify-center bg-black text-white p-8">
+    <div className="radial-glow" />
     <div className="text-center">
       <h1 className="text-8xl md:text-[12rem] leading-none tracking-tighter mb-6">
         Viola Ou

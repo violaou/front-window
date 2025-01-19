@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-black text-white;
+    @apply bg-neutral-800 text-white;
     font-family: "Instrument Serif", serif, sans-serif;
     font-weight: 400;
     font-style: normal;

@@ -4,12 +4,7 @@ import { Menu as MenuIcon, X } from 'lucide-react'
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const links = [
-    { name: 'study-desk', url: '/study-desk' }
-    // 'Link 2',
-    // 'Link 3',
-    // 'Link 4'
-  ]
+  const links = [{ name: 'study-desk', url: '/study-desk' }]
 
   return (
     <div className="fixed top-0 left-0 z-50 md:p-8 p-4">
