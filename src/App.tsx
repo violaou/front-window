@@ -6,7 +6,7 @@ import { Menu } from './components/Menu'
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans select-none">
       <Menu />
       <Header />
       <Projects />
